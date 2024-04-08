@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adaptive card</title>
+    <style>
+        .card {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #007BFF;
+        }
+
+        .card a.no {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Would you like to cancel you order?</h2>
+        <p>Please confirm:</p>
+
+        <a href="https://prod-00.westeurope.logic.azure.com:.../triggers/manual/paths/invoke?action=yes&...">Yes</a>
+        <a href="https://prod-00.westeurope.logic.azure.com:.../triggers/manual/paths/invoke?action=no&...">No</a>
+    </div>
+
+</body>
+
+</html>
