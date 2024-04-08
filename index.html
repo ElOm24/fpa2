@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <title>Adaptive card</title>
     <style>
         .card {
@@ -22,7 +23,7 @@
             color: #666;
         }
 
-        .card a {
+        .card button {
             display: inline-block;
             text-decoration: none;
             padding: 10px 15px;
@@ -36,6 +37,7 @@
             background-color: #dc3545;
         }
     </style>
+
 </head>
 
 <body>
@@ -44,10 +46,12 @@
         <h2>Would you like to cancel you order?</h2>
         <p>Please confirm:</p>
 
-        <a href="https://prod-00.westeurope.logic.azure.com:.../triggers/manual/paths/invoke?action=yes&...">Yes</a>
-        <a href="https://prod-00.westeurope.logic.azure.com:.../triggers/manual/paths/invoke?action=no&...">No</a>
-    </div>
+        <button id="confirmCancellation">Yes</button>
+        <button id="declineCancellation" class="no">No</button>
 
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
